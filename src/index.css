@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+  }
+  
+  body {
+    @apply bg-black text-white font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-space-grotesk;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-blue-400 ring-offset-2 ring-offset-black;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+@layer utilities {
+  .aspect-w-16 {
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+  
+  .aspect-w-16 > * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300;
+  }
+
+  .hover-lift:hover {
+    @apply -translate-y-1;
+  }
+
+  .active {
+    @apply text-white bg-blue-900/30 backdrop-blur-sm;
+  }
+
+  :root {
+    --nav-gradient: #ec4899, #a855f7, #3b82f6;
+  }
+
+  .nav-active {
+    @apply relative text-transparent overflow-hidden;
+  }
+
+  .nav-active span {
+    @apply relative z-10;
+    background: linear-gradient(to right, var(--nav-gradient));
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .nav-active::after {
+    content: '';
+    @apply absolute bottom-0 left-1/2 w-0 h-0.5;
+    background: linear-gradient(to right, var(--nav-gradient));
+    transform: translateX(-50%);
+    animation: navLineExpand 0.3s ease forwards;
+  }
+
+  .nav-active::before {
+    content: '';
+    @apply absolute inset-0 opacity-0;
+    background: radial-gradient(
+      60px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(236, 72, 153, 0.15),
+      rgba(168, 85, 247, 0.15) 40%,
+      transparent 80%
+    );
+    transition: opacity 0.3s ease;
+  }
+
+  .nav-active:hover::before {
+    @apply opacity-100;
+  }
+
+  @keyframes navLineExpand {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+}
