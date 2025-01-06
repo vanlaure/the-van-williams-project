@@ -2,13 +2,6 @@ import { Github, MousePointer2, Sparkles, Code2, Terminal } from 'lucide-react';
 
 export const codingTools = [
   {
-    id: 'overview',
-    name: 'AI-Powered Development Tools',
-    description: "Our journey into AI-powered coding began with GPT Engineer. Since then, we've evolved to use more sophisticated tools, primarily Bolt.diy (which we used to build this site) and the Cline extension for VS Code. We've created everything from simple applications to complex websites and full-stack SaaS platforms using these tools. The possibilities are endless – we encourage you to explore them yourself!",
-    icon: Code2,
-    details: []
-  },
-  {
     id: 'github-copilot',
     name: 'GitHub Copilot - AI pair programming assistant powered by OpenAI Codex',
     description: 'Real-time code suggestions, natural language to code conversion, and intelligent autocomplete',

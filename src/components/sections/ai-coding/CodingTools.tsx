@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Card } from '../../ui/Card';
 import { codingTools } from '../../../data/codingTools';
-import { Sparkles, ArrowRight } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 
 interface CodingToolsProps {
   onSelectTool: (toolId: string) => void;
@@ -26,7 +26,6 @@ export function CodingTools({ onSelectTool, selectedTool }: CodingToolsProps) {
           </p>
         </div>
       </div>
-
       <div className="space-y-3">
         {codingTools.map((tool, index) => {
           const Icon = tool.icon;
@@ -61,9 +60,11 @@ export function CodingTools({ onSelectTool, selectedTool }: CodingToolsProps) {
                   <h4 className={`font-medium ${isSelected ? 'text-blue-400' : 'text-white'}`}>
                     {tool.name}
                   </h4>
-                  <p className="text-xs text-gray-400 mt-0.5 line-clamp-2">
-                    {tool.description}
-                  </p>
+                  {tool.id !== 'overview' && (
+                    <p className="text-xs text-gray-400 mt-0.5 line-clamp-2">
+                      {tool.description}
+                    </p>
+                  )}
                 </div>
                 
                 {/* Click for more indicator */}

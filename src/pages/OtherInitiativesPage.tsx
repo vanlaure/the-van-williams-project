@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Brain, Podcast, MessageSquare, BookOpen, Dog, Dumbbell, Sparkles } from 'lucide-react';
+import { Brain, Podcast, MessageSquare, BookOpen, Dog, Dumbbell, Sparkles, Cpu } from 'lucide-react';
 import { InitiativeCard } from '../components/initiatives/InitiativeCard';
 import { InitiativesBackground } from '../components/backgrounds/InitiativesBackground';
 
@@ -98,12 +98,12 @@ export function OtherInitiativesPage() {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-16"
           >
+            <Cpu className="w-12 h-12 text-blue-400 mx-auto mb-6" />
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Other AI Initiatives
             </h1>
             <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-              Explore our diverse range of AI-powered projects, from Bible verse memorization
-              to automated content creation and intelligent chatbots.
+              Explore our diverse range of AI-powered projects, both completed and in development: from a Bible verse memorization tool to automated podcast content creation, intelligent chatbots, mobile apps, and full-stack SaaS platforms.
             </p>
           </motion.div>
 
