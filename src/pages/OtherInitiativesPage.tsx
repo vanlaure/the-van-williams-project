@@ -55,8 +55,6 @@ const initiatives = [
       "• 'On Our Way' travel guide series",
       "• Business Resiliency as a Service (BRaaS)",
       "• AI Editing and Publishing Agency (AEPA)",
-      "• PetDox App",
-      "• Fitness App"
     ],
     gradient: "from-orange-500/20 to-yellow-500/20"
   },

@@ -25,12 +25,11 @@ export default function Writing() {
           <div className="flex justify-center mb-6">
             <PenTool className="w-16 h-16 text-blue-400" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             AI-Assisted Writing Projects
-          </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Exploring the boundaries of creative writing through artificial intelligence,
-            producing compelling narratives that blend human creativity with machine intelligence.
+          </h1>
+          <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+            In a strategic experiment to test the limits of AI in creative writing, we embarked on a journey to explore the possibilities. We wanted to see just how far artificial intelligence could go in crafting compelling narratives, and indeed, the possibilities were revealed. And we did it in an unconventional way—on a cell phone, in between reps during a morning weight training workout. Here’s what we’ve done.
           </p>
         </motion.div>
 

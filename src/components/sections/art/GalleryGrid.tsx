@@ -7,7 +7,7 @@ interface GalleryGridProps {
 
 export function GalleryGrid({ galleries }: GalleryGridProps) {
   return (
-    <div className="grid md:grid-cols-3 gap-8">
+    <div className="w-full grid md:grid-cols-3 gap-20 justify-items-center mx-2">
       {galleries.map((gallery, index) => (
         <GalleryCard
           key={gallery.id}

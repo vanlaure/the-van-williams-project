@@ -106,7 +106,7 @@ export default function Future() {
         <SectionLayout
           id="future"
           title="Future Initiative: Pioneering Tomorrow's AI"
-          description="Embarking on an extraordinary journey into the future of artificial intelligence. We're not just predicting tomorrow's innovations – we're actively creating them. Through groundbreaking research, cutting-edge experimentation, and fearless exploration, we're pushing the boundaries of what's possible in AI technology."
+          description="What began as an exploration into artificial intelligence has evolved into a comprehensive understanding of its transformative potential. Through rigorous testing and real-world applications, we've discovered AI's capacity to solve complex business challenges and create measurable value across industries. From streamlining operations to enhancing customer experiences, our implementations have consistently delivered quantifiable results. Looking ahead, we're focused on translating tomorrow's AI breakthroughs into today's practical solutions. Our team combines deep technical expertise with industry knowledge to develop AI systems that address specific business needs. We're committed to responsible innovation, ensuring our AI solutions are not only powerful but also transparent, ethical, and aligned with our clients' objectives. We invite you to collaborate with us in shaping the future of AI-driven business transformation. Together, we can turn technological potential into tangible outcomes."
           icon={Rocket}
           className="bg-transparent"
         >

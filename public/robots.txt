@@ -1,0 +1,38 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://vanwilliamsproject.com/sitemap.xml
+
+# Allow all bots to access these directories
+Allow: /art/
+Allow: /music/
+Allow: /writing/
+Allow: /text-to-image/
+Allow: /other-initiatives/
+Allow: /ai-coding/
+Allow: /future/
+Allow: /team/
+Allow: /info/
+Allow: /history/
+
+# Allow access to static assets
+Allow: /images/
+Allow: /audio/
+Allow: /*.js
+Allow: /*.css
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.ico
+Allow: /*.woff
+Allow: /*.woff2
+
+# Prevent access to any sensitive directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /internal/
+Disallow: /api/

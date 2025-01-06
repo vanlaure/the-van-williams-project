@@ -21,16 +21,18 @@ export function ImageGrid({ images }: ImageGridProps) {
             transition={{ delay: index * 0.1 }}
             className="cursor-pointer"
             onClick={() => setSelectedImage(image)}
+            role="button"
+            aria-label={`View ${image.title} in full size`}
           >
             <div className="relative group overflow-hidden rounded-xl">
               <img
                 src={image.url}
-                alt={image.title}
-                className="w-full h-[10000px] object-cover transition-transform duration-500 group-hover:scale-110"
+                alt={`AI-generated artwork: ${image.title} - ${image.description}`}
+                className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <div className="text-center p-4">
-                  <h3 className="text-xl font-bold text-white mb-2">{image.title}</h3>
+                  <h2 className="text-xl font-bold text-white mb-2">{image.title}</h2>
                   <p className="text-gray-300">{image.description}</p>
                 </div>
               </div>

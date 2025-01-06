@@ -6,20 +6,21 @@ export function NavLinks() {
   const { handleNavigation } = useNavigation();
 
   return (
-    <div className="hidden md:flex items-center space-x-1">
+    <div className="hidden md:flex items-center justify-end space-x-4">
       {navigationItems.map((item, index) => (
         <motion.button
           key={item.href}
           onClick={() => handleNavigation(item.href)}
-          className={`relative px-3 py-2 text-base font-medium text-gray-300 hover:text-white transition-colors ${
-            item.href === location.pathname ? 'active' : ''
+          className={`relative px-4 py-2 text-lg font-bold text-gray-300 hover:text-white transition-colors ${
+            item.href === location.pathname ? 'text-white' : ''
           }`}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.1 }}
           whileHover="hover"
         >
-          {item.label}
+          <span className="visible">{item.label}</span>
+          <span className="sr-only">{item.fullLabel}</span>
           <motion.div
             className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-purple-500"
             initial={{ scaleX: 0 }}

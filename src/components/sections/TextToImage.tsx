@@ -88,19 +88,19 @@ export default function TextToImage() {
           {/* Floating Logo Background */}
           <div className="absolute inset-y-0 right-0 w-2/3 opacity-[0.08]">
             <div className="absolute top-2 right-[5%] w-20 h-20 animate-float-slow">
-              <img src="/images/services/leonardo.svg" alt="" className="w-full h-full opacity-40" />
+              <img src="/images/services/leonardo.svg" alt="Leonardo AI Service Logo" className="w-full h-full opacity-40" />
             </div>
             <div className="absolute top-[25%] right-[45%] w-16 h-16 animate-float-slower">
-              <img src="/images/services/mistral.svg" alt="" className="w-full h-full opacity-40" />
+              <img src="/images/services/mistral.svg" alt="Mistral AI Service Logo" className="w-full h-full opacity-40" />
             </div>
             <div className="absolute top-[8%] right-[60%] w-18 h-18 animate-float">
-              <img src="/images/services/stable-diffusion.svg" alt="" className="w-full h-full opacity-40" />
+              <img src="/images/services/stable-diffusion.svg" alt="Stable Diffusion AI Service Logo" className="w-full h-full opacity-40" />
             </div>
             <div className="absolute bottom-4 right-[52%] w-16 h-16 animate-float-slow">
-              <img src="/images/services/dalle.svg" alt="" className="w-full h-full opacity-40" />
+              <img src="/images/services/dalle.svg" alt="DALL-E AI Service Logo" className="w-full h-full opacity-40" />
             </div>
             <div className="absolute top-[70%] right-[3%] w-14 h-14 animate-float-slower">
-              <img src="/images/services/canva.svg" alt="" className="w-full h-full opacity-40" />
+              <img src="/images/services/canva.svg" alt="Canva Service Logo" className="w-full h-full opacity-40" />
             </div>
           </div>
           

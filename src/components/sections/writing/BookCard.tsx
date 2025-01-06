@@ -26,10 +26,15 @@ export function BookCard({ project, index }: BookCardProps) {
     >
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0">
-        <div 
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-          style={{ backgroundImage: `url(${project.image})` }}
-        />
+        <div className="absolute inset-0 flex">
+          {project.images.map((img, i) => (
+            <div
+              key={i}
+              className="flex-1 bg-cover bg-center transition-transform duration-700 scale-90 mx-2"
+              style={{ backgroundImage: `url(${img})` }}
+            />
+          ))}
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900/95 to-gray-900/90" />
       </div>
 
@@ -44,13 +49,16 @@ export function BookCard({ project, index }: BookCardProps) {
           >
             <Icon className={`w-6 h-6 text-${project.accent}-400`} />
           </motion.div>
-          <h3 className="text-2xl font-bold text-white">{project.title}</h3>
-        </div>
+        <h2 className="text-2xl font-bold text-white">{project.title}</h2>
+      </div>
 
-        <p className="text-gray-300 mb-6">{project.description}</p>
-        
-        <ul className="space-y-2 mb-8">
-          {project.details.map((detail, i) => (
+      <p className="text-gray-300 mb-6">{project.description}</p>
+      {project.title === 'On Our Way Series' && (
+        <div className="w-48 h-48 bg-cover bg-center" style={{ backgroundImage: "url('/public/On-Our_Way.jpg')" }} />
+      )}
+      
+      <ul className="space-y-2 mb-8">
+        {project.details?.map((detail, i) => (
             <motion.li
               key={i}
               initial={{ opacity: 0, x: -20 }}
@@ -67,7 +75,7 @@ export function BookCard({ project, index }: BookCardProps) {
         <div className="space-y-4">
           {project.books && (
             <>
-              <h4 className="text-lg font-semibold text-white">Available on Amazon:</h4>
+              <h3 className="text-lg font-semibold text-white">Available on Amazon:</h3>
               {project.books.map((book, i) => (
                 <motion.a
                   key={i}

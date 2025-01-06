@@ -29,7 +29,7 @@ export function GalleryCard({ gallery, delay }: GalleryCardProps) {
                 <Eye className="w-5 h-5" />
                 <span className="font-medium">View Gallery</span>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-3">{gallery.title}</h3>
+              <h2 className="text-2xl font-bold text-white mb-3">{gallery.title}</h2>
               <p className="text-gray-300 mb-4">{gallery.description}</p>
               <div className="flex items-center gap-2 text-blue-400 font-medium group/link">
                 <span>See {gallery.images.length} {gallery.images.length === 1 ? 'artwork' : 'artworks'}</span>

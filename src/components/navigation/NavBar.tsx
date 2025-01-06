@@ -33,10 +33,10 @@ export function NavBar() {
       >
         <div className="w-full">
           <div className="flex items-center justify-between h-16">
-            <div className="pl-2">
+            <div className="flex-shrink-0 pl-4">
               <NavLogo />
             </div>
-            <div className="flex items-center px-4 sm:px-6 lg:px-8">
+            <div className="flex-1 flex items-center justify-end pr-6">
               <NavLinks />
               <MobileMenu />
             </div>

@@ -1,6 +1,13 @@
-import { Github, Bot, MousePointer2, Sparkles, Code2, Terminal } from 'lucide-react';
+import { Github, MousePointer2, Sparkles, Code2, Terminal } from 'lucide-react';
 
 export const codingTools = [
+  {
+    id: 'overview',
+    name: 'AI-Powered Development Tools',
+    description: "Our journey into AI-powered coding began with GPT Engineer. Since then, we've evolved to use more sophisticated tools, primarily Bolt.diy (which we used to build this site) and the Cline extension for VS Code. We've created everything from simple applications to complex websites and full-stack SaaS platforms using these tools. The possibilities are endless – we encourage you to explore them yourself!",
+    icon: Code2,
+    details: []
+  },
   {
     id: 'github-copilot',
     name: 'GitHub Copilot - AI pair programming assistant powered by OpenAI Codex',
@@ -101,64 +108,34 @@ export const codingTools = [
     url: 'https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev'
   },
   {
-    id: 'copilot-chat',
-    name: 'VS Code Copilot Chat - Interactive coding assistance with natural language',
-    description: 'AI-powered chat interface for code explanations, debugging, and refactoring suggestions',
+    id: 'cursor',
+    name: 'Cursor AI - Advanced code editor with integrated AI capabilities',
+    description: 'A powerful code editor built from the ground up with AI integration, offering chat, code generation, and intelligent editing features',
     details: [
-      '### Natural Language Interaction',
-      '• Ask questions about your code',
-      '• Get explanations for complex functions',
-      '• Debug issues conversationally',
+      '### AI-First Editor',
+      '• Built-in AI chat interface',
+      '• Real-time code generation',
+      '• Smart code completion',
       '',
-      '### Code Analysis',
-      '• Real-time code review',
-      '• Security vulnerability detection',
-      '• Performance optimization tips',
+      '### Advanced Features',
+      '• Code explanation and documentation',
+      '• Refactoring suggestions',
+      '• Bug detection and fixes',
       '',
-      '### Smart Refactoring',
-      '• Suggest code improvements',
-      '• Modernize legacy code',
-      '• Apply best practices',
+      '### Development Tools',
+      '• Multi-file editing',
+      '• Git integration',
+      '• Terminal integration',
       '',
-      '### Learning Assistant',
-      '• Explain code concepts',
-      '• Provide coding examples',
-      '• Share best practices',
+      '### Performance',
+      '• Fast and responsive',
+      '• Low resource usage',
+      '• Optimized for large codebases',
       ''
     ].join('\n'),
-    videoUrl: 'https://www.youtube.com/embed/gDJzr9DBKTI',
-    icon: Bot,
-    url: 'https://github.com/features/preview/copilot-chat'
-  },
-  {
-    id: 'tabnine',
-    name: 'Tabnine - Local-first AI code completion with privacy focus',
-    description: 'Privacy-focused AI assistant that runs locally and learns from your coding patterns',
-    details: [
-      '### Privacy-First Approach',
-      '• Local AI model processing',
-      '• No code leaves your machine',
-      '• Enterprise-grade security',
-      '',
-      '### Smart Completions',
-      '• Full-line and full-function completion',
-      '• Framework-specific suggestions',
-      '• Team-wide code patterns',
-      '',
-      '### Language Support',
-      '• 30+ programming languages',
-      '• Popular frameworks & libraries',
-      '• Custom language models',
-      '',
-      '### Team Collaboration',
-      '• Shared code patterns',
-      '• Team-specific suggestions',
-      '• Repository-based learning',
-      ''
-    ].join('\n'),
-    videoUrl: 'https://www.youtube.com/embed/YqtWXy3jmm4',
+    videoUrl: 'https://www.youtube.com/embed/Rgz6mX93C4Y',
     icon: MousePointer2,
-    url: 'https://www.tabnine.com'
+    url: 'https://cursor.sh'
   },
   {
     id: 'cody',

@@ -9,6 +9,7 @@ interface SectionLayoutProps {
   icon: LucideIcon;
   children: ReactNode;
   className?: string;
+  headerLevel?: 'h1' | 'h2';
 }
 
 export function SectionLayout({ 
@@ -17,7 +18,8 @@ export function SectionLayout({
   description, 
   icon: Icon, 
   children, 
-  className = "" 
+  className = "",
+  headerLevel = 'h1'
 }: SectionLayoutProps) {
   return (
     <section 
@@ -34,9 +36,15 @@ export function SectionLayout({
           className="text-center mb-16"
         >
           <Icon className="w-12 h-12 text-blue-400 mx-auto mb-6" aria-hidden="true" />
-          <h2 id={`${id}-title`} className="text-4xl font-bold text-white mb-8">
-            {title}
-          </h2>
+          {headerLevel === 'h1' ? (
+            <h1 id={`${id}-title`} className="text-4xl font-bold text-white mb-8">
+              {title}
+            </h1>
+          ) : (
+            <h2 id={`${id}-title`} className="text-4xl font-bold text-white mb-8">
+              {title}
+            </h2>
+          )}
           <p className="text-lg text-gray-400 max-w-6xl mx-auto px-16 leading-relaxed">
             {description}
           </p>

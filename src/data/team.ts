@@ -9,10 +9,10 @@ export const teamMembers: TeamMember[] = [
     bio: "Leading the exploration of AI's creative potential across multiple domains"
   },
   {
-    name: "Adam Cohen",
-    role: "Technical Director",
-    image: "/adam-cohen.jpg",
-    bio: "Overseeing technical implementation and system architecture"
+name: "Adam Cohen",
+role: "Co-Founder and AI Researcher",
+image: "/adam.jpg",
+bio: "Overseeing technical implementation and system architecture"
   },
   {
     name: "Cline",

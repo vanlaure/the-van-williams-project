@@ -35,11 +35,11 @@ export function GalleryPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-0.5"
         >
-          <h1 className="text-lg font-bold text-white mb-1">{gallery.title}</h1>
-          <p className="text-xs text-gray-300">{gallery.description}</p>
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">{gallery.title}</h1>
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">{gallery.description}</p>
         </motion.div>
 
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-3 gap-2 mt-8">
           {gallery.images.map((image, index) => (
             <motion.div
               key={image.id}
@@ -55,9 +55,9 @@ export function GalleryPage() {
                   image.url.includes('beauty_queen_photo') ? 'object-[center_25%]' : ''
                 }`}
               />
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity p-2 flex items-center justify-center">
+              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-center justify-center">
                 <div className="text-center">
-                  <h3 className="text-sm font-bold text-white mb-1">{image.title}</h3>
+                  <h2 className="text-lg font-bold text-white mb-2">{image.title}</h2>
                   <p className="text-xs text-gray-300">{image.description}</p>
                 </div>
               </div>

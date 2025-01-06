@@ -4,14 +4,15 @@ import { Book, Feather, Plane } from 'lucide-react';
 export const writingProjects: WritingProject[] = [
   {
     title: 'The Cole Adams Series',
-    description: 'A groundbreaking experiment in AI-assisted novel writing, producing two compelling thriller novels available on Amazon.',
+    description: 'We asked ourselves, can you really write a book with AI? How hard would it be? Well, we tried and produced two thriller novels, "The Corruption Within" and "The Singularity Dawn". And we did it in an unconventional way as well.',
     details: [
       'Complete AI-assisted novel writing process',
       'Professional editing and publishing workflow',
       'Available worldwide on Amazon',
       'Thriller genre with complex plot structures',
       'Integration of multiple AI writing tools',
-      'Human-AI collaborative storytelling'
+      'Human-AI collaborative storytelling',
+      'Created between reps during morning workouts'
     ],
     books: [
       {
@@ -25,12 +26,12 @@ export const writingProjects: WritingProject[] = [
     ],
     upcomingBook: 'The Destruction',
     icon: Book,
-    image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&q=80',
+    images: ['/public/The_Corruption_Within2.jpg', '/public/Singularity2.jpg'],
     accent: 'blue'
   },
   {
     title: 'The Mark of Cain',
-    description: 'An ambitious Christian thriller series that reimagines the biblical story of Cain in a contemporary fantasy setting.',
+    description: 'In this riveting Christian thriller, Cain, a timeless wanderer with secrets that have shaped millennia, collides with Michael, a passionate young scholar wrestling with enigmas larger than life. As the world edges closer to unprecedented upheaval, Michael finds himself thrust into a maze where the lines between ancient legends and modern dilemmas blur. Journey with them into a narrative where every turn reveals deeper mysteries and where destiny is carved from the echoes of the past. Discover a tale where faith challenges fate, and where the past holds the key to the future. A three part novel series coming soon.',
     details: [
       'Biblical fantasy thriller genre',
       'Deep character development with AI assistance',
@@ -40,22 +41,22 @@ export const writingProjects: WritingProject[] = [
       'Advanced plot generation techniques'
     ],
     icon: Feather,
-    image: 'https://images.unsplash.com/photo-1504610926078-a1611febcad3?auto=format&fit=crop&q=80',
+    images: ['/public/Screenshot 2024-09-08 151023.png', '/public/cain.jpg'],
     accent: 'purple'
   },
   {
     title: 'On Our Way Series',
-    description: 'A revolutionary travel guidebook series that combines practical information with personal growth narratives.',
+    description: 'In one of our other experiments we asked our "friend" ChatGPT questions about what interests young adults. One of the answers was travel. So, in a series of conversations with ChatGPT we arrived at a new travel series for young adults. It\'s a revolutionary travel guidebook series that combines practical travel information focused on young adults; and it includes a journal to capture all the great memories. COMING SOON!',
     details: [
       'AI-enhanced travel writing',
       'Personal development integration',
       'Cultural insights and analysis',
       'Focus on major travel destinations',
       'Included Journal makes it easy and fun to capture your greatest memories',
-      'Launching Summer 2024'
+      'Launching Summer 2025'
     ],
     icon: Plane,
-    image: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?auto=format&fit=crop&q=80',
+    images: ['/public/On-Our_Way.jpg'],
     accent: 'emerald'
   }
 ];

@@ -12,6 +12,6 @@ export interface WritingProject {
   books?: Book[];
   upcomingBook?: string;
   icon: LucideIcon;
-  image: string;
+  images: string[];
   accent: 'blue' | 'purple' | 'emerald';
 }
